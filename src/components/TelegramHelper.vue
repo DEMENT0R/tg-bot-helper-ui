@@ -81,7 +81,7 @@ function useLocalStorage() {
     <button @click="sendMessage(botToken, userId)">sendMessage</button>
   </div>
   <div>
-    <pre>{{ result }}</pre>
+    <pre v-show="result">{{ result }}</pre>
   </div>
 </template>
 
